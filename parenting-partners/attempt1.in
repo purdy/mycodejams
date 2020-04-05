@@ -1,0 +1,75 @@
+<?php
+
+class codeJamParent {
+  protected $activities = [];
+  protected $name;
+
+  // function __construct($name) {
+  function __construct($name) {
+    $this->name = $name;
+  }
+  public function areYouFree(array $times) {
+    $free = TRUE;
+    foreach ($this->activities as $bookedActivity) {
+      // If start time is between start/end of booked activity OR if end time is between start/end, then not free
+      // print_r($times); print_r($bookedActivity);
+      // echo "Evaluating freeness based on T: {$times[0]}-{$times[1]} and BA: {$bookedActivity[0]}-{$bookedActivity[1]}\n";
+      if (
+        (($bookedActivity[0] < $times[0]) && ($times[0] < $bookedActivity[1])) ||
+        (($bookedActivity[0] < $times[1]) && ($times[1] < $bookedActivity[1]))
+      ) {
+        $free = FALSE;
+        break;
+      }
+    }
+    // echo $this->name . " free = " . var_export($free, TRUE) . "\n";
+    return $free;
+  }
+  public function bookAppt(array $times) {
+    $this->activities[] = $times;
+  }
+}
+
+$number_test_cases = trim(fgets(STDIN));
+for ($i = 1; $i <= $number_test_cases; $i++) {
+  $schedule = '';
+  $num_activities = trim(fgets(STDIN));
+  unset($activities);
+  for ($a = 0; $a < $num_activities; $a++) {
+    $activities[] = trim(fgets(STDIN));
+  }
+  // echo "Loading up $num_activities activities for test case #$i...\n";
+  unset($cameron); unset($jamie); unset($activityLine);
+  $cameron = new codeJamParent('Cameron');
+  $jamie = new codeJamParent('Jamie');
+  // print_r($cameron); print_r($jamie); print_r($activities);
+  $a = 0;
+  foreach ($activities as $activityLine) {
+    // echo "Here's the activityLine: $activityLine\n";
+    // var_dump($activityLine);
+    $activityTimes = explode(' ', $activityLine);
+    // var_dump($activityTimes);
+    // echo "Got these activityTimes for activity # " . $a++ . ":\n"; print_r($activityTimes);
+    if ($cameron->areYouFree($activityTimes)) {
+      // echo "Cameron's got this!\n";
+      // var_dump($activityTimes);
+      $cameron->bookAppt($activityTimes);
+      // var_dump($activityTimes);
+      $schedule .= 'C';
+    }
+    elseif ($jamie->areYouFree($activityTimes)) {
+      // echo "Jamie's got this!\n";
+      $jamie->bookAppt($activityTimes);
+      $schedule .= 'J';
+    }
+    else {
+      $schedule = 'IMPOSSIBLE';
+      break;
+    }
+    // echo "What's going on w/ activityTimes????\n";
+    // print_r($activityTimes);
+  }
+  // print_r($cameron);
+  echo "Case #$i: $schedule\n";
+}
+

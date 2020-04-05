@@ -1,0 +1,350 @@
+Loading up 3 activities for test case #1...
+array(2) {
+  [0]=>
+  string(3) "360"
+  [1]=>
+  string(3) "480"
+}
+Got these activityTimes for activity # 0:
+Array
+(
+    [0] => 360
+    [1] => 480
+)
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(3) "420"
+  [1]=>
+  string(3) "540"
+}
+Got these activityTimes for activity # 1:
+Array
+(
+    [0] => 420
+    [1] => 540
+)
+Evaluating freeness based on T: 420-540 and BA: 360-480
+Free = false
+Free = true
+Jamie's got this!
+array(2) {
+  [0]=>
+  string(3) "600"
+  [1]=>
+  string(3) "660"
+}
+Got these activityTimes for activity # 2:
+Array
+(
+    [0] => 600
+    [1] => 660
+)
+Evaluating freeness based on T: 600-660 and BA: 360-480
+Free = true
+Cameron's got this!
+Case #1: CJC
+Loading up 3 activities for test case #2...
+array(2) {
+  [0]=>
+  string(3) "360"
+  [1]=>
+  string(3) "480"
+}
+Got these activityTimes for activity # 0:
+Array
+(
+    [0] => 360
+    [1] => 480
+)
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(3) "420"
+  [1]=>
+  string(3) "540"
+}
+Got these activityTimes for activity # 1:
+Array
+(
+    [0] => 420
+    [1] => 540
+)
+Evaluating freeness based on T: 420-540 and BA: 360-480
+Free = false
+Free = true
+Jamie's got this!
+array(2) {
+  [0]=>
+  string(3) "600"
+  [1]=>
+  string(3) "660"
+}
+Got these activityTimes for activity # 2:
+Array
+(
+    [0] => 600
+    [1] => 660
+)
+Evaluating freeness based on T: 600-660 and BA: 360-480
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(1) "0"
+  [1]=>
+  string(4) "1440"
+}
+Got these activityTimes for activity # 3:
+Array
+(
+    [0] => 0
+    [1] => 1440
+)
+Evaluating freeness based on T: 0-1440 and BA: 360-480
+Evaluating freeness based on T: 0-1440 and BA: 600-660
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(1) "1"
+  [1]=>
+  string(1) "3"
+}
+Got these activityTimes for activity # 4:
+Array
+(
+    [0] => 1
+    [1] => 3
+)
+Evaluating freeness based on T: 1-3 and BA: 360-480
+Evaluating freeness based on T: 1-3 and BA: 600-660
+Evaluating freeness based on T: 1-3 and BA: 0-1440
+Free = false
+Evaluating freeness based on T: 1-3 and BA: 420-540
+Free = true
+Jamie's got this!
+array(2) {
+  [0]=>
+  string(1) "2"
+  [1]=>
+  string(1) "4"
+}
+Got these activityTimes for activity # 5:
+Array
+(
+    [0] => 2
+    [1] => 4
+)
+Evaluating freeness based on T: 2-4 and BA: 360-480
+Evaluating freeness based on T: 2-4 and BA: 600-660
+Evaluating freeness based on T: 2-4 and BA: 0-1440
+Free = false
+Evaluating freeness based on T: 2-4 and BA: 420-540
+Evaluating freeness based on T: 2-4 and BA: 1-3
+Free = false
+Case #2: IMPOSSIBLE
+Loading up 5 activities for test case #3...
+array(2) {
+  [0]=>
+  string(3) "360"
+  [1]=>
+  string(3) "480"
+}
+Got these activityTimes for activity # 0:
+Array
+(
+    [0] => 360
+    [1] => 480
+)
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(3) "420"
+  [1]=>
+  string(3) "540"
+}
+Got these activityTimes for activity # 1:
+Array
+(
+    [0] => 420
+    [1] => 540
+)
+Evaluating freeness based on T: 420-540 and BA: 360-480
+Free = false
+Free = true
+Jamie's got this!
+array(2) {
+  [0]=>
+  string(3) "600"
+  [1]=>
+  string(3) "660"
+}
+Got these activityTimes for activity # 2:
+Array
+(
+    [0] => 600
+    [1] => 660
+)
+Evaluating freeness based on T: 600-660 and BA: 360-480
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(1) "0"
+  [1]=>
+  string(4) "1440"
+}
+Got these activityTimes for activity # 3:
+Array
+(
+    [0] => 0
+    [1] => 1440
+)
+Evaluating freeness based on T: 0-1440 and BA: 360-480
+Evaluating freeness based on T: 0-1440 and BA: 600-660
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(1) "1"
+  [1]=>
+  string(1) "3"
+}
+Got these activityTimes for activity # 4:
+Array
+(
+    [0] => 1
+    [1] => 3
+)
+Evaluating freeness based on T: 1-3 and BA: 360-480
+Evaluating freeness based on T: 1-3 and BA: 600-660
+Evaluating freeness based on T: 1-3 and BA: 0-1440
+Free = false
+Evaluating freeness based on T: 1-3 and BA: 420-540
+Free = true
+Jamie's got this!
+array(2) {
+  [0]=>
+  string(1) "2"
+  [1]=>
+  string(1) "4"
+}
+Got these activityTimes for activity # 5:
+Array
+(
+    [0] => 2
+    [1] => 4
+)
+Evaluating freeness based on T: 2-4 and BA: 360-480
+Evaluating freeness based on T: 2-4 and BA: 600-660
+Evaluating freeness based on T: 2-4 and BA: 0-1440
+Free = false
+Evaluating freeness based on T: 2-4 and BA: 420-540
+Evaluating freeness based on T: 2-4 and BA: 1-3
+Free = false
+Case #3: IMPOSSIBLE
+Loading up 2 activities for test case #4...
+array(2) {
+  [0]=>
+  string(3) "360"
+  [1]=>
+  string(3) "480"
+}
+Got these activityTimes for activity # 0:
+Array
+(
+    [0] => 360
+    [1] => 480
+)
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(3) "420"
+  [1]=>
+  string(3) "540"
+}
+Got these activityTimes for activity # 1:
+Array
+(
+    [0] => 420
+    [1] => 540
+)
+Evaluating freeness based on T: 420-540 and BA: 360-480
+Free = false
+Free = true
+Jamie's got this!
+array(2) {
+  [0]=>
+  string(3) "600"
+  [1]=>
+  string(3) "660"
+}
+Got these activityTimes for activity # 2:
+Array
+(
+    [0] => 600
+    [1] => 660
+)
+Evaluating freeness based on T: 600-660 and BA: 360-480
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(1) "0"
+  [1]=>
+  string(4) "1440"
+}
+Got these activityTimes for activity # 3:
+Array
+(
+    [0] => 0
+    [1] => 1440
+)
+Evaluating freeness based on T: 0-1440 and BA: 360-480
+Evaluating freeness based on T: 0-1440 and BA: 600-660
+Free = true
+Cameron's got this!
+array(2) {
+  [0]=>
+  string(1) "1"
+  [1]=>
+  string(1) "3"
+}
+Got these activityTimes for activity # 4:
+Array
+(
+    [0] => 1
+    [1] => 3
+)
+Evaluating freeness based on T: 1-3 and BA: 360-480
+Evaluating freeness based on T: 1-3 and BA: 600-660
+Evaluating freeness based on T: 1-3 and BA: 0-1440
+Free = false
+Evaluating freeness based on T: 1-3 and BA: 420-540
+Free = true
+Jamie's got this!
+array(2) {
+  [0]=>
+  string(1) "2"
+  [1]=>
+  string(1) "4"
+}
+Got these activityTimes for activity # 5:
+Array
+(
+    [0] => 2
+    [1] => 4
+)
+Evaluating freeness based on T: 2-4 and BA: 360-480
+Evaluating freeness based on T: 2-4 and BA: 600-660
+Evaluating freeness based on T: 2-4 and BA: 0-1440
+Free = false
+Evaluating freeness based on T: 2-4 and BA: 420-540
+Evaluating freeness based on T: 2-4 and BA: 1-3
+Free = false
+Case #4: IMPOSSIBLE
